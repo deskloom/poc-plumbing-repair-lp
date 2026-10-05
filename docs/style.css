@@ -35,3 +35,5 @@ footer{text-align:center;font-size:11px;color:#5b6b78;padding:16px 12px 28px}
   .result strong{font-size:23px}
   .bar{padding:8px 10px}.logo{font-size:13px}.tel-sm{font-size:12px;padding:6px 8px}
 }
+.nw{display:inline-block}
+.final h2{border-left:none;padding-left:0;text-align:center}
