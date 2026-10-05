@@ -1,0 +1,37 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:#1d2b36;background:#eef5fa;line-height:1.7}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #d5e3ee}
+.logo{font-weight:700;color:#0b5c8f}
+.tel-sm{color:#fff;background:#e8590c;padding:6px 12px;border-radius:6px;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
+main{max-width:760px;margin:0 auto;padding:0 12px 24px}
+.hero{background:linear-gradient(135deg,#0b5c8f,#1c8fc9);color:#fff;border-radius:0 0 16px 16px;padding:28px 20px;margin:0 -12px 16px}
+.eyebrow{margin:0;font-size:14px;opacity:.9}
+h1{font-size:26px;line-height:1.4;margin:8px 0 14px}
+.points{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:8px}
+.points li{background:rgba(255,255,255,.18);padding:4px 12px;border-radius:999px;font-size:14px}
+.points b{font-size:17px}
+.cta{display:block;text-align:center;background:#e8590c;color:#fff;text-decoration:none;font-weight:700;font-size:20px;padding:14px;border-radius:10px;box-shadow:0 3px 0 #a33f06}
+.cta small{display:block;font-size:14px;font-weight:400}
+.card{background:#fff;border-radius:12px;padding:18px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h2{font-size:18px;margin:0 0 10px;border-left:5px solid #1c8fc9;padding-left:8px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+label{font-size:13px;display:block}
+select,input{width:100%;margin-top:4px;padding:9px;font-size:15px;border:1px solid #b9cbd9;border-radius:6px;background:#fff}
+.result{margin:12px 0 4px;display:flex;flex-direction:column}
+.result strong{font-size:26px;color:#0b5c8f}
+#area-result{font-size:18px}
+.ok{color:#1a7f37!important}.ng{color:#b42318!important}
+.note{font-size:12px;color:#5b6b78;margin:4px 0 0}
+.reasons,.steps{margin:0;padding-left:20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;list-style:none;padding:0;counter-reset:s}
+.steps li{counter-increment:s;background:#eef5fa;border-radius:8px;padding:8px 6px;text-align:center;font-size:13px}
+.steps li::before{content:counter(s);display:block;font-weight:700;color:#e8590c;font-size:18px}
+.final{text-align:center}
+footer{text-align:center;font-size:11px;color:#5b6b78;padding:16px 12px 28px}
+@media(max-width:560px){
+  h1{font-size:21px}
+  .form{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .result strong{font-size:23px}
+  .bar{padding:8px 10px}.logo{font-size:13px}.tel-sm{font-size:12px;padding:6px 8px}
+}
